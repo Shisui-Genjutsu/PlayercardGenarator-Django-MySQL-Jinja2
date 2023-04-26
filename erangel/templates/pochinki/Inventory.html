@@ -1,0 +1,51 @@
+{% extends 'pochinki/base.html' %}
+{% load static %}
+{% block content %}+
+    <style>
+        .griddiv{
+            display: grid;
+            grid-template-columns: 4fr 8fr;
+            gap: 80px;
+        }
+    </style>
+    <div class="griddiv mt-5">
+        <div class="line1">
+            <form action="" method="get">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" name="q" id="floatingInput" placeholder="search">
+                    <label for="floatingInput">Search</label>
+                </div>
+            </form>
+            <hr>
+            <div class="contentlistdiv">
+                <h2 class="clist">Contents</h2>
+                <div class="contentlist">
+                    {% for i in gun %}
+                    <div>
+                        {{i.gun}}
+                        <hr>
+                    </div>
+                    {% endfor %}
+                </div>
+        </div>
+    </div>
+    <div class="line2">
+        <h2 class="glist">GUNS</h2>
+        <div class="guns">
+            {% for i in gun %}
+                <div>
+                    <hr>
+                    <h3>{{i.owner}}</h3>
+                    <h5>id: {{i.id}}</h5>
+                    <hr>
+                    <div>
+                        <div>Gun: {{i.gun}}</div>
+                        <div>Type: {{i.type}}</div>
+                        <div>Rating: {{i.Rating}}</div>
+                        <hr>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

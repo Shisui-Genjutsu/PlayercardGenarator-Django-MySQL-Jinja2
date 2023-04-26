@@ -1,0 +1,49 @@
+{% extends 'pochinki/base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}
+    <title>Login/Restration</title>
+{% endblock %}
+{% block navbar %}
+  {% include 'pochinki/navbar.html' %}
+{% endblock navbar %}
+{% block content %}
+<div class="container mt-5">
+  {% if page == 'login' %}
+  <div class="row">
+    <div class="col-8 mt-5 offset-2">
+    <form action="{% url 'login' %}" class="p-5 shadow rounded-2 border border-1 border-danger" method="post">
+      {% csrf_token %}
+      <div class="form-floating mb-3">
+        <input type="text" name="lusername" class="form-control" id="lusername" placeholder="lusername">
+        <label for="lusername">Username</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" name="lpassword" class="form-control" id="lpassword" placeholder="Password">
+        <label for="lpassword">Password</label>
+      </div>
+      <button class="btn btn-primary w-100 my-2">Log in</button>
+      <p>
+      don't have account
+      <a href="{% url 'register' %}">Register</a>
+      </p>
+    </form>
+    </div>
+    </div>
+  </div>
+  {% else %}
+  <div class="row">
+    <div class="col-8 mt-3 offset-2">
+      <form class="p-5 shadow rounded-2 border border-1 border-danger" action="{% url 'register' %}" method="post">
+          {% csrf_token %}
+          {{form|crispy}}
+        <button class="btn btn-primary w-100 my-2">Register</button>
+        <p>
+          already have an account
+          <a href="{% url 'login' %}">Login</a>
+        </p>
+      </form>
+    </div>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,72 @@
+.largetext{
+    font-family: 'Anton', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: rgba(255, 0, 0, 0.432); */
+    margin-top: 100px;
+    z-index: -1;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    filter: brightness(100%);
+}
+/* .text, .ltext{
+    
+} */
+.text{
+    display: inline-block;
+}
+.ltext{
+    /* font-size: 20rem; */
+    height: 700px;
+    width: 1500px;
+    background: url(images/pain2.gif) no-repeat center center;
+    background-size: 1500px 700px;
+    font-size: 20rem;
+    /* text-shadow: 0px 0px 20px rgba(248, 5, 5, 0.2); */
+    -webkit-text-fill-color: transparent;
+    background-clip:text;
+    -webkit-background-clip:text;
+}
+
+.formdiv{
+    /* display: flex;
+    justify-content:center;
+    align-items:center; */
+    z-index:100000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-63%);
+}
+
+.form1{
+
+font-family: 'Sofia Sans', 
+            sans-serif;
+            /* border-bottom:1px red double;
+            border-left:1px red double;
+            border-right:1px red double;
+            border-top:1px black double; */
+            background: rgba( 207, 143, 143, 0.01 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 4px );
+            -webkit-backdrop-filter: blur( 4px );
+            border-radius: 10px;
+            border-top: 1px solid rgba(250, 246, 246, 0.7);
+            border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
+            border-right: 1px solid rgba( 255, 255, 255, 0.18 );
+            border-left: 1px solid rgba( 255, 255, 255, 0.18 );
+            box-shadow:
+                    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                    0 12.5px 10px rgba(0, 0, 0, 0.06),
+                    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                    0 100px 80px rgba(0, 0, 0, 0.20);
+}
+
+input{
+    opacity: 0.9;
+}

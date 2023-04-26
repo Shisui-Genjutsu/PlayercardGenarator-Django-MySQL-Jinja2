@@ -1,0 +1,62 @@
+{% extends 'pochinki/base.html' %}
+{% load static %}
+{% block content %}
+<!--<h2 class="text-center mb-3 mt-4" style="
+text-transform:uppercase;
+margin: 40px auto;
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 50px;
+  display: block;
+  margin: 11px 0 17px 0;
+  text-shadow: 0 13.36px 8.896px #9d9281;
+"><span style="color:red">Akatsuki</span> Registration Form</h2>-->
+{% block csslink %}
+<link rel="stylesheet" href="{%static 'pochinki/basic2.css'%}">
+{% endblock csslink %}
+
+  <div class="largetext">
+    <div class="ltext">AKAT<div class="text">SUKI</div></div>
+    
+    <!-- <div class="ltext">AKATSUKI</div> -->
+  </div>
+
+<div class="formdiv">
+<div class="container" style="width: 500px;">
+    <div class="row">
+        <div class="col-12">
+
+            <!-- form -->
+            <form method="post" action="" class="form1 rounded-3 p-3 mt-5" >
+              {% csrf_token %}
+
+                <div class="name" style="display: flex; justify-content:space-evenly;width:100%;">
+                    <div class="form-floating mb-3 px-0 w-100 mt-0">
+                        <input type="text" name="fname" class="form-control shadow border border-dark" id="floatingInput" placeholder="First Name">
+                        <label for="floatingInput">First Name</label>
+                      </div>
+                      <div class="form-floating mb-3 ms-1 px-0 w-100">
+                        <input type="text" name="lname" class="form-control shadow border border-dark" id="floatingInput" placeholder="Last Name">
+                        <label for="floatingInput">last Name</label>
+                      </div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" name="email" class="form-control shadow border border-dark" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" name="place" class="form-control shadow border border-dark" id="floatingPassword" placeholder="Village">
+                    <label for="floatingPassword">Place</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" name="purpose" class="form-control shadow border border-dark" id="floatingInput" placeholder="Reason to join Akatsuki">
+                    <label for="floatingInput">Purpose</label>
+                  </div>
+                  <button class="btn btn-lg btn-dark w-100 shadow" style="border: 2px red solid;">All Mighty Push</button>
+            </form>
+                <!-- form -->
+            
+            </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
