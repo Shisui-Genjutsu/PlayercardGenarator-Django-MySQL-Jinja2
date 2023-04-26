@@ -2,3 +2,6 @@ django
 alembic
 django-crispy-forms
 crispy-bootstrap5
+python-decouple
+mysqlclient
+pymysql
