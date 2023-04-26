@@ -15,11 +15,10 @@
 
 
 <p>
-School Web Application using React JS, FastAPI and MySQL with JWT authentication and microservice architecture.
-This application has 4 microserices 3 backend microservices(student, teacher, admin) and 1 ui microservice(frontend)
-all microservices has its own database MySQL 
-backend is written in FastAPI python framework for building RestAPI
-frontend is written in ReactJs it is component based javascript library
+Player Card Genator Application using Django, Jinja2, HTML, CSS, Bottstrap and MySQL with with user login and registeration.
+This application has Django(Python framework) as backend, o display data in frontend jinja2 is used and HTML, CSS and Bootstrap for frontend. 
+MySQL database is used as a production database and Sqlite3 is used for testing database. Player Card genaretor application genarates PUBG player sates in a fancy
+card. User can edit delete his player card when he was logged in and he no acces to another players player cards and backend search operation is available for easy acces to player cards
 </p>
 
 <h3>#root Installations:</h3>
@@ -30,13 +29,7 @@ frontend is written in ReactJs it is component based javascript library
 
 <h3>#Installations for frontend:</h3>
 <ul>
-  <li>First install `Node JS`</li>
-  <li>Install create-react-app `npm i create-react-app`</li>
-  <li>Execute `npx create-react-app frontend`</li>
-  <li>Execute `npm i framer-motion`</li>
-  <li>Execute `npm i react-router-dom`</li>
-  <li>Execute `npm install @mui/material @emotion/react @emotion/styled`</li>
-  <li>Execute `npm install @mui/icons-material`</li>
+  <li>In this project CDN links are used to reduce setup complexity. Added bootstrap CDN links to base.html to run bootstrap</li>
 </ul>
 
 <h3>#Installations for backend:</h3>
