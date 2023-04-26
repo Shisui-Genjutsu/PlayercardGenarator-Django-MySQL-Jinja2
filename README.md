@@ -15,10 +15,10 @@
 
 
 <p>
-Player Card Genator Application using Django, Jinja2, HTML, CSS, Bottstrap and MySQL with with user login and registeration.
-This application has Django(Python framework) as backend, o display data in frontend jinja2 is used and HTML, CSS and Bootstrap for frontend. 
-MySQL database is used as a production database and Sqlite3 is used for testing database. Player Card genaretor application genarates PUBG player sates in a fancy
-card. User can edit delete his player card when he was logged in and he no acces to another players player cards and backend search operation is available for easy acces to player cards
+Player Card Genator Application using Django, Jinja2, HTML, CSS, Bootstrap and MySQL with user login and registration.
+This application has Django(Python framework) as backend, display data in frontend using jinja2 template language and HTML, CSS and Bootstrap for frontend. 
+MySQL database is used as a production database and Sqlite3 is used for testing database. Player Card genaretor application genarates PUBG player stats in a fancy
+card. User can edit delete his player card when he was logged in and he has no access to another players player cards and backend search operation is available for easy access to player cards
 </p>
 
 <h3>#root Installations:</h3>
