@@ -1,23 +1,24 @@
-<h1 align="center">School Web Application</h1>
+<h1 align="center">Player Card Genator Application</h1>
 <p align="center">
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT LicenSe"></a>
-<a href="[LICENSE](https://github.com/Shisui-Genjutsu/SchoolWebApp-Reactjs-FastAPI-MySQL)"><img src="https://img.shields.io/github/repo-size/Shisui-Genjutsu/SchoolWebApp-Reactjs-FastAPI-MySQL" alt="MIT LicenSe"></a>
-<a href="[LICENSE](https://github.com/Shisui-Genjutsu/SchoolWebApp-Reactjs-FastAPI-MySQL)"><img src="https://img.shields.io/github/directory-file-count/Shisui-Genjutsu/SchoolWebApp-Reactjs-FastAPI-MySQL" alt="MIT LicenSe"></a>
+<a href="[LICENSE](https://github.com/Shisui-Genjutsu/PlayercardGenarator-Django-MySQL-Jinja2)"><img src="https://img.shields.io/github/directory-file-count/Shisui-Genjutsu/PlayercardGenarator-Django-MySQL-Jinja2" alt="MIT LicenSe"></a>
 </p>
 
 <h3>#Demo Work Screenshots:</h3>
 <p align="center">
-<img width="330" src="https://user-images.githubusercontent.com/112178680/230625713-969b0e34-feac-4352-a0bc-b62efd27e8d1.png" alt="MIT LicenSe">
-<img width="330" src="https://user-images.githubusercontent.com/112178680/230625723-cb62ee16-4072-4225-a877-6407ce821e32.png" alt="MIT LicenSe">
-<img width="330" src="https://user-images.githubusercontent.com/112178680/230625741-558cf5e3-44f9-4549-ac7b-3c69cad67bcd.png" alt="MIT LicenSe">
+<img width="330" src="https://user-images.githubusercontent.com/112178680/234684511-54362d57-074e-4922-97f3-52e821d8de21.png" alt="p1">
+</br>
+<img width="330" src="https://user-images.githubusercontent.com/112178680/234685737-61555eed-23e3-4bdc-ba55-8fc6e691ffad.gif" alt="MIT LicenSe">
 </p>
 
+
+
+
 <p>
-School Web Application using React JS, FastAPI and MySQL with JWT authentication and microservice architecture.
-This application has 4 microserices 3 backend microservices(student, teacher, admin) and 1 ui microservice(frontend)
-all microservices has its own database MySQL 
-backend is written in FastAPI python framework for building RestAPI
-frontend is written in ReactJs it is component based javascript library
+Player Card Genator Application using Django, Jinja2, HTML, CSS, Bootstrap and MySQL with user login and registration.
+This application has Django(Python framework) as backend, display data in frontend using jinja2 template language and HTML, CSS and Bootstrap for frontend. 
+MySQL database is used as a production database and Sqlite3 is used for testing database. Player Card genaretor application genarates PUBG player stats in a fancy
+card. User can edit delete his player card when he was logged in and he has no access to another players player cards and backend search operation is available for easy access to player cards
 </p>
 
 <h3>#root Installations:</h3>
@@ -28,13 +29,7 @@ frontend is written in ReactJs it is component based javascript library
 
 <h3>#Installations for frontend:</h3>
 <ul>
-  <li>First install `Node JS`</li>
-  <li>Install create-react-app `npm i create-react-app`</li>
-  <li>Execute `npx create-react-app frontend`</li>
-  <li>Execute `npm i framer-motion`</li>
-  <li>Execute `npm i react-router-dom`</li>
-  <li>Execute `npm install @mui/material @emotion/react @emotion/styled`</li>
-  <li>Execute `npm install @mui/icons-material`</li>
+  <li>In this project CDN links are used to reduce setup complexity. Added bootstrap CDN links to base.html to run bootstrap</li>
 </ul>
 
 <h3>#Installations for backend:</h3>
