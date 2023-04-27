@@ -27,5 +27,4 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       run: |
-        cd erangel
-        python manage.py test
+        python erangel/manage.py test
